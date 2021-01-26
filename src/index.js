@@ -9,10 +9,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App.jsx";
+import { add, subtract1from2, divide } from "./calculator.js";
 
 ReactDOM.render(
   <div>
-    <App />
+    <ul>
+      <li>{add(1, 2)}</li>
+      <li>{subtract1from2(7, 2)}</li>
+      <li>{divide(1, 71)}</li>
+    </ul>
   </div>,
   document.getElementById("root")
 );
+
+// ReactDOM.render(
+//   <div>
+//     <App />
+//   </div>,
+//   document.getElementById("root")
+// );
